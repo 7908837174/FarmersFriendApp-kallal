@@ -1,0 +1,267 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+ 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff4f4;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.logo_container {
+    flex: 1;
+}
+
+.Farmers_Friend {
+    width: 100px;
+    height: auto;
+}
+
+.nav_bar {
+    display: flex;
+    gap: 20px;
+}
+
+.nav_bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.action_bar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.action_container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.action_icon {
+    font-size: 24px;
+    color: white;
+    margin-right: 5px;
+}
+
+.bag-item-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 16px;
+    visibility: hidden;
+}
+
+/* Main Content */
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.bag-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bag-items-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bag-item-container {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-left-part {
+    flex: 1;
+}
+
+.bag-item-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.item-right-part {
+    flex: 3;
+    padding-left: 10px;
+}
+
+.company {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.item-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.price-container {
+    margin-top: 10px;
+}
+
+.current-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f4e4e2;
+}
+
+.original-price {
+    text-decoration: line-through;
+    margin-left: 5px;
+    color: #888;
+}
+
+.discount-percentage {
+    margin-left: 5px;
+    color: #e0dada;
+}
+
+.delivery-details {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.remove-from-cart {
+    cursor: pointer;
+    color: #ffefed;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.remove-from-cart:hover {
+    color: #b8adac;
+}
+
+/* Bag Summary */
+.bag-summary {
+    width: 25%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bag-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.price-item-tag {
+    font-size: 14px;
+}
+
+.price-item-value {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.price-item-value.priceDetail-base-discount {
+    color: #6a1409;
+}
+
+.price-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn-place-order {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-place-order:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #f9d6f1;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column h3 {
+    margin-bottom: 10px;
+}
+
+.footer_column a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 5px 0;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
