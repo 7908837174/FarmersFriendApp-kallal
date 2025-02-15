@@ -1,1 +1,667 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "FarmersFriend Ember", 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    background-color: rgb(209, 255, 200);
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f54e77;
+    padding: 0 20px;
+}
+
+.Farmers_Friend {
+    height: 40px;
+    width: 40px;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.nav_bar a {
+    font-size: 14px;
+    color: rgb(19, 57, 48);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 32px 0;
+    border-bottom: 5px solid #fff;
+}
+
+.nav_bar a:hover {
+    border-bottom: 4px solid #0e0b0c;
+}
+
+.nav_bar a sup {
+    font-size: 10px;
+}
+
+.search_bar {
+    height: 40px;
+    width: 95vw;  
+    display: flex;
+    align-items: center;
+    margin-left: 12px;  
+    background-color: #f9f9f9; 
+}
+
+.search_input {
+    color: rgb(14, 7, 7);
+    background-color: white;
+    flex-grow: 1;
+    height: 30px;
+    border: none;
+    border-radius: 0 4px 50px 0;
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    margin-left: 10px; 
+}
+
+.search_button .material-symbols-outlined {
+    font-size: 27px;   
+    color: rgb(8, 8, 1);
+}
+ 
+.search_input:focus {
+    border: 2px solid #000000;  
+}
+
+.action_bar {
+    display: flex;
+    max-width: 200px;
+    gap: 15px;
+    align-items: center;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.action_icon {
+    font-size: 24px;
+}
+
+.action_name {
+    font-weight: bold;
+}
+
+/* Banner Styles */
+.banner_container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.banner_container img {
+    width: 100%;
+    height: 600px;
+    width: 1500px;
+    border-radius: 10px;
+}
+
+/* Category Styles */
+.category_heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.category_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 10%;
+}
+
+.category_item div {
+    width: 150px;
+    height: 150px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Product Styles */
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 10%;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-details {
+    margin-top: 15px;
+}
+
+.product-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.current-price {
+    color: green;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: red;
+    margin-left: 10px;
+}
+
+.add-to-cart {
+    background-color: rgb(122, 248, 55);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #6fdf5e;
+}
+
+.bag-item-count {
+    background-color: #f54e77;
+    text-align: center;
+    line-height: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: 700;
+}
+
+/* Footer Styles */
+.footer_container {
+    padding: 30px 0 40px 0;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_column h3 {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer_column a {
+    color: #fff;
+    font-size: 15px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.footer_column a:hover {
+    color: #f54e77;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+.copyright {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #222;
+    margin-top: 20px;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "FarmersFriend Ember", 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    background-color: rgb(209, 255, 200);
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f54e77;
+    padding: 0 20px;
+}
+
+.Farmers_Friend {
+    height: 40px;
+    width: 40px;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.nav_bar a {
+    margin-top: 40px;
+    font-size: 14px;
+    color: rgb(19, 57, 48);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 32px 0;
+    border-bottom: 5px solid #fff;
+}
+
+.nav_bar a:hover {
+    border-bottom: 4px solid #0e0b0c;
+}
+
+.nav_bar a sup {
+    font-size: 10px;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    background :#6fdf5e;
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "FarmersFriend Ember", 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    background-color: rgb(209, 255, 200);
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f54e77;
+    padding: 0 20px;
+}
+
+.Farmers_Friend {
+    height: 40px;
+    width: 40px;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin: 0 20px; 
+}
+
+.nav_bar a {
+    font-size: 14px;
+    color: rgb(19, 57, 48);
+    font-weight: 700;
+    margin-top: 10px;
+      
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 0;
+    border-bottom: 5px solid #fff;
+}
+
+.nav_bar a:hover {
+    border-bottom: 4px solid #0e0b0c;
+}
+
+.nav_bar a sup {
+    font-size: 10px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+}
+
+.dropdown_content a {
+    color: rgb(19, 57, 48);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown_content a:hover {
+    background-color: rgb(209, 255, 200);
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.search_input {
+    color: rgb(14, 7, 7);
+    background-color: white;
+    flex-grow: 1;
+    height: 40px;
+    border: none;
+    border-radius: 0 4px 50px 0;
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.search_button .material-symbols-outlined {
+    font-size: 27px;
+    color: rgb(red, green, blue);
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "FarmersFriend Ember", 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    background-color: rgb(209, 255, 200);
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f54e77;
+    padding: 0 20px;
+}
+
+.Farmers_Friend {
+    height: 40px;
+    width: 40px;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.nav_bar a {
+    font-size: 14px;
+    color: rgb(19, 57, 48);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 32px 0;
+    border-bottom: 5px solid #fff;
+}
+
+.nav_bar a:hover {
+    border-bottom: 4px solid #0e0b0c;
+}
+
+.nav_bar a sup {
+    font-size: 10px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+}
+
+.dropdown_content a {
+    color: rgb(19, 57, 48);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown_content a:hover {
+    background-color: rgb(209, 255, 200);
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.search_input {
+    color: rgb(14, 7, 7);
+    background-color: white;
+    flex-grow: 1;
+    height: 40px;
+    border: none;
+    border-radius: 0 4px 50px 0;
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.search_button .material-symbols-outlined {
+    font-size: 27px;
+    color: rgb(8, 8, 1);
+}
+ 
+.go-to-ecommerce {
+    text-align: center;
+    margin-top: 30px;  
+}
+
+.go-to-ecommerce-button {
+    background-color: #01e1a5;  
+    color: rgba(0, 0, 0, 0.586);  
+    padding: 100px , 159px;  
+    text-align: center;
+    text-decoration: none;  
+    display: inline-block;
+    font-size: 35px;  
+    border: none;  
+    border-radius: 12px; 
+    cursor: pointer;  
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.go-to-ecommerce-button:hover {
+    background-color: #597df1;  
+    transform: scale(1.05);  
+}
+
+.go-to-ecommerce-button:active {
+    background-color: #15eedc;  
+    transform: scale(1);  
+}
+/* General styles for the logout button */
+.logout-btn {
+    background-color: #ffea00; /* Red color */
+    color: rgb(0, 0, 0);
+    padding: 15px 780px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #5bc515; /* Darker red when hovered */
+}
+
+/* Styles for the logout confirmation modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */ 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Can be adjusted */
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+.notification-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.notification-button:hover {
+    background-color: #45a049;
+}
+
+.notification-button:focus {
+    outline: none;
+}
  
