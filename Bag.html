@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Friend App - Shopping Bag</title>
+    <link rel="stylesheet" href="Bag.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo_container">
+            <a href="FarmersFriendApp.html">
+                <img class="Farmers_Friend" src="https://th.bing.com/th/id/OIP.WOfNfZidO2nD-40G_t63PQHaFf?rs=1&amp;pid=ImgDetMain" alt="Farmers Friend Logo">
+            </a>
+        </div>
+        <div class="action_bar">
+            <div class="action_container">
+                <a href="FarmersFriendApp.html">
+                    <div class="action_icon">🏠</div>
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="action_container">
+                <a href="cart.html">
+                    <div class="action_icon">🛒</div>
+                    <span>Cart</span>
+                </a>
+                <div class="bag-item-count" id="bag-item-count">0</div> <!-- Dynamic count -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="bag-page">
+            <!-- Bag Items Section -->
+            <div id="bag-items-container" class="bag-items-container">
+                <h2>Your Shopping Bag</h2>
+                <!-- Bag Items will be dynamically inserted here by JS -->
+            </div>
+
+            <!-- Bag Summary Section -->
+            <div class="bag-summary">
+                <div class="bag-details-container">
+                    <h3>Price Details</h3>
+                    <div class="price-header">PRICE DETAILS (0 Items)</div>
+                    <div class="price-item">
+                        <span class="price-item-tag">Total MRP</span>
+                        <span id="total-mrp" class="price-item-value">$0</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item-tag">Discount on MRP</span>
+                        <span id="discount" class="price-item-value priceDetail-base-discount">-$0</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item-tag">Convenience Fee</span>
+                        <span id="convenience-fee" class="price-item-value">$0</span>
+                    </div>
+                    <hr>
+                    <div class="price-footer">
+                        <span class="price-item-tag">Total Amount</span>
+                        <span id="total-amount" class="price-item-value">$0</span>
+                    </div>
+                    <button class="btn-place-order">
+                        <div class="css-xjhrni">PLACE ORDER</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer_container">
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+                <a href="#drinks">Drinks</a>
+                <a href="#health">Health</a>
+                <a href="#hygiene">Hygiene</a>
+                <a href="#nutrition">Nutrition</a>
+            </div>
+            <div class="footer_column">
+                <h3>SUPPORT</h3>
+                <a href="#contact">Contact Us</a>
+                <a href="#faq">FAQ</a>
+                <a href="#terms">Terms & Conditions</a>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            kallalfarmersFriendApp@gmail.com <br>
+            <p>© 2024 Farmers Friend App. All rights reserved.</p>
+        </div>
+    </footer> 
+
+    <script src="Bag.js"></script> 
+</body>
+</html>
  
