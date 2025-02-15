@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Friend App</title>
+    <link rel="stylesheet" href="FarmersFriendApp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="#"><img class="Farmers_Friend" src="https://th.bing.com/th/id/OIP.WOfNfZidO2nD-40G_t63PQHaFf?rs=1&pid=ImgDetMain" alt="Home"></a>
+        </div>
+
+        <nav class="nav_bar">
+            <div class="dropdown">
+                <a href="#">Drinks</a>
+                <div class="dropdown_content">
+                    <a href="#">Tea</a>
+                    <a href="#">Coffee</a>
+                    <a href="#">Juices</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Health</a>
+                <div class="dropdown_content">
+                    <a href="#">Supplements</a>
+                    <a href="#">Vitamins</a>
+                    <a href="#">Herbs</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Hygiene</a>
+                <div class="dropdown_content">
+                    <a href="#">Soaps</a>
+                    <a href="#">Sanitizers</a>
+                    <a href="#">Cleansers</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Cleaning</a>
+                <div class="dropdown_content">
+                    <a href="#">Detergents</a>
+                    <a href="#">Disinfectants</a>
+                    <a href="#">Cleaners</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Nutrition</a>
+                <div class="dropdown_content">
+                    <a href="#">Protein</a>
+                    <a href="#">Vitamins</a>
+                    <a href="#">Minerals</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Studio <sup>New</sup></a>
+                <div class="dropdown_content">
+                    <a href="#">Yoga</a>
+                    <a href="#">Meditation</a>
+                    <a href="#">Fitness</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="action_bar">
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">person</span>
+                <span class="action_name">Profile</span>
+            </div>
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </div>
+            <div class="action_container">
+                <a href="Bag.html">
+                    <span class="material-symbols-outlined action_icon" style="color: black;">shopping_bag</span>
+                    <span class="action_name" style="color: black; height: 20px; width: 20px; text-underline-position: none; text-underline-offset: none; text-underline-offset: none; ">Bag</span>
+                    <span class="bag-item-count" style="height: 20px; width: 20px;">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="search_bar">
+        <span class="material-symbols-outlined search_icon">search</span>
+        <input id="searchInput" class="search_input" placeholder="Search for products, brands and more">
+        <button class="search_button"><span class="material-symbols-outlined">search</span></button>
+    </div>
+
+    <main>
+        <div class="banner_container" >
+            <img src="https://wallpapercave.com/wp/wp7526066.jpg" alt="wheat zenate">
+        </div>
+
+        <div class="category_heading"><span>SHOP BY CATEGORY</span></div>
+        <div class="category_item"></div>
+
+        <div id="product-items" class="items-container"></div>
+    </main>
+     
+    <div class="go-to-ecommerce">
+        <a href="E-commerce.html">
+            <button class="go-to-ecommerce-button" style="margin-bottom: 20px; height: 50px; width: 1600px;">Go to Add Product</button>
+        </a>
+    </div>
+
+    <div class="action_container">
+        <!-- Logout Button -->
+        <button id="logoutBtn" class="logout-btn" style="margin-bottom: 15px;">Logout</button>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <b><p>Do you want to log out?</p></b>
+            <button id="yes-button" class="notification-button">Yes</button>
+            <button id="cancel-button" class="notification-button">Cancel</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+                <a href="#">Drinks</a>
+                <a href="#">Health</a>
+                <a href="#">Hygiene</a>
+                <a href="#">Cleaning</a>
+                <a href="#">Nutrition</a>
+                <a href="#">Studio</a>
+            </div>
+
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+                <a href="#">Drinks</a>
+                <a href="#">Health</a>
+                <a href="#">Hygiene</a>
+                <a href="#">Cleaning</a>
+                <a href="#">Nutrition</a>
+                <a href="#">Studio</a>
+            </div>
+
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+                <a href="#">Drinks</a>
+                <a href="#">Health</a>
+                <a href="#">Hygiene</a>
+                <a href="#">Cleaning</a>
+                <a href="#">Nutrition</a>
+                <a href="#">Studio</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+            kallalfarmersFriendApp@gmail.com <br>
+            <p>© 2024 Farmers Friend App. All rights reserved.</p>
+        </div>
+    </footer>
+
+0
+
+     
+    <script src="FarmersFriendApp44.js"></script>
+    <script>
+        // Logout Modal functionality
+        const logoutBtn = document.getElementById("logoutBtn");
+        const modal = document.getElementById("myModal");
+        const span = document.getElementsByClassName("close")[0];
+        const yesButton = document.getElementById("yes-button");
+        const cancelButton = document.getElementById("cancel-button");
+
+        logoutBtn.onclick = function () {
+            modal.style.display = "block";
+        };
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        yesButton.onclick = function () {
+            localStorage.clear();
+            sessionStorage.clear();
+            window.location.href = "login.html"; // Redirect to login page
+        };
+
+        cancelButton.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+</html>
  
