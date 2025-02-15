@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Friend App - Add & Delete Product</title>
+    <link rel="stylesheet" href="E-commerce.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="FarmersFriendApp.html"><img class="Farmers_Friend" src="https://th.bing.com/th/id/OIP.WOfNfZidO2nD-40G_t63PQHaFf?rs=1&amp;pid=ImgDetMain" alt="Home"></a>
+            <!-- Home Button -->
+          <a href="FarmersFriendApp.html">
+    <button class="home-button">Back to Home</button>
+</a>
+
+        </div>
+    </header>
+
+    <div class="instagram-section">
+        <h2>Follow us on Instagram</h2>
+        <a href="https://www.instagram.com/yourprofile" target="_blank">Visit our Instagram</a>
+        <div class="instagram-feed">
+            <iframe src="https://www.instagram.com/p/yourpostembedurl/embed" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+    <div class="product-form">
+        <h2>Add New Product</h2>
+        <form id="productForm">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required="">
+
+            <label for="productDescription">Product Description:</label>
+            <textarea id="productDescription" name="productDescription" rows="4" required=""></textarea>
+
+            <label for="productImage">Product Image URL:</label>
+            <input type="url" id="productImage" name="productImage" placeholder="https://via.placeholder.com/200" required="">
+
+            <button type="submit" id="submitProduct">Add Product</button>
+        </form>
+    </div>
+
+    <div class="action-buttons">
+        <button id="deleteAll" class="delete-button">Delete All Products</button>
+    </div>
+
+    <div id="product-items" class="items-container"></div>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+                <a href="#drinks">Drinks</a>
+                <a href="#health">Health</a>
+                <a href="#hygiene">Hygiene</a>
+                <a href="#nutrition">Cleaning</a>
+                <a href="#nutrition">Nutrition</a>
+                <a href="#studio">Studio</a>
+            </div>
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+                <a href="#drinks">Drinks</a>
+                <a href="#health">Health</a>
+                <a href="#hygiene">Hygiene</a>
+                <a href="#nutrition">Cleaning</a>
+                <a href="#nutrition">Nutrition</a>
+                <a href="#studio">Studio</a>
+            </div>
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+                <a href="#drinks">Drinks</a>
+                <a href="#health">Health</a>
+                <a href="#hygiene">Hygiene</a>
+                <a href="#nutrition">Cleaning</a>
+                <a href="#nutrition">Nutrition</a>
+                <a href="#studio">Studio</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+            kallalfarmersFriendApp@gmail.com <br>
+            <p>© 2024 Farmers Friend App. All rights reserved.</p>
+        </div>
+    </footer>
+ 
+
+    <script src="E-commerce.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
 
